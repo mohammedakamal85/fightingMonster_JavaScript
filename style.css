@@ -1,0 +1,114 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #1a237e, #311b92);
+  color: white;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#text {
+  background-color: #212121;
+  color: #e0e0e0;
+  border-radius: 5px;
+  padding: 15px;
+  font-size: 16px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+#game {
+  max-width: 600px;
+  background: linear-gradient(135deg, #424242, #616161);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#controls {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+button {
+  background-color: #3949ab;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+button:hover {
+  background-color: #1e88e5;
+  transform: scale(1.05);
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+#stats {
+  display: flex;
+  justify-content: space-between;
+  background-color: #333;
+  border-radius: 5px;
+  padding: 15px;
+  color: white;
+  margin-top: 10px;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.stat {
+  font-weight: bold;
+}
+
+#monsterStats {
+  display: none;
+  border-radius: 5px;
+  padding: 15px;
+  background-color: #b71c1c;
+  color: white;
+  margin-top: 10px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+#monsterName {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+progress {
+  width: 100%;
+  height: 20px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+progress::-webkit-progress-bar {
+  background-color: #757575;
+  border-radius: 5px;
+}
+
+progress::-webkit-progress-value {
+  background-color: #388e3c;
+}
+
+progress::-moz-progress-bar {
+  background-color: #388e3c;
+}
